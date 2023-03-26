@@ -21,3 +21,4 @@ networks:
   front-tier:
   back-tier:
   ```
+The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000`
