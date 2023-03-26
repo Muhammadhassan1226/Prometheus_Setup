@@ -22,6 +22,14 @@ networks:
   back-tier:
   ```
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000`
+```
+username - admin
+password - hassan123 (Password is stored in the `/grafana/config.monitoring` env file)
+```
+You can also change password according to your desire . Just edit
+```
+GF_SECURITY_ADMIN_PASSWORD=<Your Password>
+```
 Verify the prometheus datasource configuration in Grafana. If it was not already configured, create a Grafana datasource with these settings:
 
 `name: Prometheus(default)`
