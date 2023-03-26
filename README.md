@@ -55,8 +55,15 @@ Available on github: https://github.com/rfmoz/grafana-dashboards.git
 You can Import dashboard through dashboard id which `1860` in this case or you can upload its json file available at this link https://grafana.com/api/dashboards/1860/revisions/30/download
 
 
-## Grafana Loki 
+# Grafana Loki 
 
 `name: loki(default)`
 `url: http://loki:3100`
 `access: browser`
+
+## Docker Driver Client
+Grafana Loki officially supports a Docker plugin that will read logs from Docker containers and ship them to Loki. The plugin can be configured to send the logs to a private Loki instance
+
+## Installing 
+
+``` docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions ```
