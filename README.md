@@ -74,9 +74,10 @@ Run the following command to install the plugin:
 To check installed plugins, use the docker plugin ls command. Plugins that have started successfully are listed as enabled:
 
 ``` $ docker plugin ls
-ID                  NAME         DESCRIPTION           ENABLED  ```
+ID                  NAME         DESCRIPTION           ENABLED  
 ac720b8fcfdb        loki         Loki Logging Driver   true
 
+```
 ## Change the logging driver for a container
 
 ```
