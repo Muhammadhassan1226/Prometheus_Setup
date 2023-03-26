@@ -65,8 +65,12 @@ You can Import dashboard through dashboard id which `1860` in this case or you c
 Grafana Loki officially supports a Docker plugin that will read logs from Docker containers and ship them to Loki. The plugin can be configured to send the logs to a private Loki instance
 
 ## Installing 
+The Docker plugin must be installed on each Docker host that will be running containers you want to collect logs from.
+
+Run the following command to install the plugin:
 
 ``` docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions ```
+
 To check installed plugins, use the docker plugin ls command. Plugins that have started successfully are listed as enabled:
 
 ``` $ docker plugin ls
