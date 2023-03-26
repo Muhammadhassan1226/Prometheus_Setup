@@ -76,3 +76,16 @@ To check installed plugins, use the docker plugin ls command. Plugins that have 
 ``` $ docker plugin ls
 ID                  NAME         DESCRIPTION           ENABLED  ```
 ac720b8fcfdb        loki         Loki Logging Driver   true
+
+## Change the logging driver for a container
+
+```
+{
+    "log-driver": "loki",
+    "log-opts": {
+        "loki-url": "http://localhost:3100/loki/api/v1/push",
+        "loki-batch-size": "400"
+    }
+}
+
+```
