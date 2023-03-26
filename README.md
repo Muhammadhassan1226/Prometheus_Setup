@@ -47,4 +47,4 @@ Only requires the default job_name: node, add as many targets as you need in ‘
       - targets: ['localhost:9100']
 ```      
 Available on github: https://github.com/rfmoz/grafana-dashboards.git
-You can Import dashboard through dashboard id which `1860` in this case or you can upload its json file available at this link `https://grafana.com/api/dashboards/1860/revisions/30/download`
+You can Import dashboard through dashboard id which `1860` in this case or you can upload its json file available at this link https://grafana.com/api/dashboards/1860/revisions/30/download
