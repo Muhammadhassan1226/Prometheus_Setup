@@ -22,3 +22,9 @@ networks:
   back-tier:
   ```
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3000`
+Verify the prometheus datasource configuration in Grafana. If it was not already configured, create a Grafana datasource with these settings:
+
+`name: Prometheus(default)`
+`type: prometheus`
+`url: http://localhost:9090`
+`access: browser`
