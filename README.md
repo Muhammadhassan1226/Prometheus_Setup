@@ -53,3 +53,10 @@ Only requires the default job_name: node, add as many targets as you need in ‘
 ```      
 Available on github: https://github.com/rfmoz/grafana-dashboards.git
 You can Import dashboard through dashboard id which `1860` in this case or you can upload its json file available at this link https://grafana.com/api/dashboards/1860/revisions/30/download
+
+
+## Grafana Loki 
+
+`name: loki(default)`
+`url: http://loki:3100`
+`access: browser`
