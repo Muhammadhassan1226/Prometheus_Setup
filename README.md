@@ -80,6 +80,8 @@ ac720b8fcfdb        loki         Loki Logging Driver   true
 ```
 ## Change the logging driver for a container
 
+Goto `/etc/docker/daemon.json` and edit this
+
 ```
 {
     "log-driver": "loki",
@@ -89,4 +91,14 @@ ac720b8fcfdb        loki         Loki Logging Driver   true
     }
 }
 
+```
+After that restart docker service by using this command `sudo systemctl restart docker`
+If the daemon.json is left as default, to specify the docker logging driver:
+```
+docker run --log-driver=loki \
+    --log-opt loki-url="https://<user_id>:<password>@logs-us-west1.grafana.net/loki/api/v1/push" \
+    --log-opt loki-retries=5 \
+    --log-opt loki-batch-size=400 \
+    grafana/grafana
+    
 ```
