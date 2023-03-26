@@ -38,3 +38,13 @@ Verify the prometheus datasource configuration in Grafana. If it was not already
 `access: browser`
 # Grafana Dashboards 
 ## Node-Exporter Dashboard 
+Nearly all default values exported by Prometheus node exporter graphed.
+
+Only requires the default job_name: node, add as many targets as you need in ‘/etc/prometheus/prometheus.yml’.
+```
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['localhost:9100']
+```      
+Available on github: https://github.com/rfmoz/grafana-dashboards.git
+You can Import dashboard through dashboard id which `1860` in this case or you can upload its json file available at this link `https://grafana.com/api/dashboards/1860/revisions/30/download`
