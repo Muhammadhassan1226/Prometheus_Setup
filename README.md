@@ -67,3 +67,8 @@ Grafana Loki officially supports a Docker plugin that will read logs from Docker
 ## Installing 
 
 ``` docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions ```
+To check installed plugins, use the docker plugin ls command. Plugins that have started successfully are listed as enabled:
+
+``` $ docker plugin ls
+ID                  NAME         DESCRIPTION           ENABLED  ```
+ac720b8fcfdb        loki         Loki Logging Driver   true
